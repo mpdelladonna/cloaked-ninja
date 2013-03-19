@@ -153,3 +153,16 @@ org.eclipse.core.runtime.CoreException: The file does not exist.
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
 !SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2013-03-13 11:31:59.179
 !MESSAGE The file does not exist.
+!SESSION 2013-03-19 11:31:31.625 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_26
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2013-03-19 11:32:17.212
+!MESSAGE Unable to find Action Set: com.mountainminds.eclemma.ui.CoverageActionSet
+
+!ENTRY org.eclipse.ui 4 4 2013-03-19 11:32:17.242
+!MESSAGE Unable to find Action Set: org.eclipse.wb.core.ui.actionset
