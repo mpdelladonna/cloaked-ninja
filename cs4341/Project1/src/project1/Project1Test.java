@@ -31,6 +31,8 @@ public class Project1Test {
 		String path = "D:\\Workspaces\\Repositories\\cloaked-ninja\\cs4341\\Project1\\src\\";
 		
 		String wm = null;
+		String rules = null;
+		
 		StringBuilder builder = new StringBuilder();
 		//line temporarily holds the last line read in
     	String line = "";
@@ -62,8 +64,10 @@ public class Project1Test {
     	    {
     	    	builder.append(line);
     	    }
-    	    
+    	    read.close();
     	    wm = new String(builder);
+    	    
+    	    
     	}
     	catch (Exception e)
     	{

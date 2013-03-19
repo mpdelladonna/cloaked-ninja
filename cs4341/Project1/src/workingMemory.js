@@ -6,4 +6,7 @@ wm.print = function()
 	print(JSON.stringify(this));
 };
 
-
+wn.ripe = false;
+wm.shape = "round";
+wm.carry = true;
+wm.weight = 2;
