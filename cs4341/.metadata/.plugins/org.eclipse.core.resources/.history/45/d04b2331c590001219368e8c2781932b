@@ -1,0 +1,9 @@
+var wm = new Object();
+
+var printFunction()
+{
+	print('\n');
+	print(JSON.stringify(wm));
+};
+
+wm.print = printFunction;

@@ -1,0 +1,6 @@
+var wm = new Object();
+
+var printFunction;
+
+
+wm.print = printFunction;

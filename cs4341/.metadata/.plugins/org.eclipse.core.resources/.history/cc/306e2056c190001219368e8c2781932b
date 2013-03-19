@@ -1,0 +1,94 @@
+package project1;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.*;
+
+import javax.script.*;
+
+public class Project1Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		Project1Test test = new Project1Test();
+		
+		System.out.println(test.getClass().getClassLoader().getResource("").getPath());
+		
+		//TODO move these into command line args
+		//String path = "..\\script.js";
+		String scriptpath = "D:\\Workspaces\\Repositories\\cloaked-ninja\\cs4341\\Project1\\src\\script.js";
+		
+		String predicatesFile = "predicates.js";
+		String actionsFile = "acitons.js";
+		String rulesFile = "rules.js";
+		String initialWorkingMemoryFile = "initialWorkingMemory.js";
+		
+		String path = "D:\\Workspaces\\Repositories\\cloaked-ninja\\cs4341\\Project1\\src\\";
+		
+		//line temporarily holds the last line read in
+    	String line = "";
+    	
+    	//create a list to hold all of the rules
+    	List<String> importedScript = new LinkedList<String>();
+    	try  
+    	{
+    		//create a filereader and a bufferedreader to open our file
+    	    FileReader fstream = new FileReader(scriptpath);
+    	    BufferedReader read = new BufferedReader(fstream);
+    	    //initialize line to the first line of the file
+    	    line = read.readLine();
+    	    
+    	    //add all the lines to the list of statements
+    	    while(line != null)
+    	    {
+    	    	importedScript.add(line);
+    	    	line = read.readLine();
+    	    }
+    	    //close the open file
+    	    read.close();
+    	}
+    	catch (Exception e)
+    	{
+    	    System.err.println("Error: " + e.getMessage());
+    	}
+    	
+        // create a script engine manager
+        ScriptEngineManager factory = new ScriptEngineManager();
+        
+        // create a JavaScript engine
+        ScriptEngine engine = factory.getEngineByName("JavaScript");
+        
+        //define some javascript
+        String javascript;
+        javascript = "var wm = new Object();" +
+        		"wm.banana = 'yellow';" +
+        		"print(wm.banana);" +
+        		"print('\\n');" +
+        		"print(wm);"+
+        		"print(JSON.stringify(wm));";
+        
+        try{
+	        // evaluate JavaScript code from String
+	        engine.eval(javascript);
+	        
+	        //evaluate all the lines
+	        for(String js : importedScript)
+	        {
+	        	engine.eval(js);
+	        }
+        }catch(ScriptException e)
+        {
+        	System.err.println(e.getMessage());
+        }
+
+	}
+	
+	public Project1Test()
+	{
+		
+	}
+
+}
