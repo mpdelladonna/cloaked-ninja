@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="project0.InvalidContentException"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.lang.Deprecated"/>
+<fullyQualifiedTypeName name="project0.Point"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="project0.Cell"/>
+<fullyQualifiedTypeName name="project0.DepthFirstSearch"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="project0.BreadthFirstSearch"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.PaintListener"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.PaintEvent"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Rectangle"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.PriorityQueue"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="search.BreadthFirstSearch"/>
+<fullyQualifiedTypeName name="search.UniformCostSearch"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,14 @@
+package project0;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Logger {
+
+	List<String> log;
+	
+	public Logger()
+	{
+		log = new ArrayList<String>();
+	}
+}

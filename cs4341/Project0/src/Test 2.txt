@@ -1,0 +1,997 @@
+DFS
+Adding Cell [occupied=false, location=Point [x=0, y=0]] to the list of in progress cells
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Cell [occupied=false, location=Point [x=1, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Cell [occupied=false, location=Point [x=0, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Cell [occupied=false, location=Point [x=1, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Cell [occupied=false, location=Point [x=2, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Cell [occupied=false, location=Point [x=2, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Cell [occupied=false, location=Point [x=3, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Cell [occupied=false, location=Point [x=3, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=3, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Cell [occupied=false, location=Point [x=4, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Cell [occupied=false, location=Point [x=4, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=4, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=4, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Cell [occupied=false, location=Point [x=4, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Cell [occupied=false, location=Point [x=3, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=3, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Cell [occupied=false, location=Point [x=2, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=true, type=rock, location=Point [x=4, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Cell [occupied=false, location=Point [x=2, y=3]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=3]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Cell [occupied=false, location=Point [x=1, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Cell [occupied=false, location=Point [x=1, y=3]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=4]]
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Cell [occupied=false, location=Point [x=2, y=4]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Cell [occupied=false, location=Point [x=1, y=4]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=4]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Cell [occupied=false, location=Point [x=0, y=3]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Cell [occupied=false, location=Point [x=0, y=4]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=4]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=3]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Cell [occupied=false, location=Point [x=0, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=4]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=4]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=3]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=4, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=true, type=rock, location=Point [x=4, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=3, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+There aren't any more cells, couldn't find the destination
+
+249 steps executed
+22 cells visited
+
+BFS
+Adding Cell [occupied=false, location=Point [x=0, y=0]] to the list of in progress cells
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Cell [occupied=false, location=Point [x=1, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Cell [occupied=false, location=Point [x=0, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Cell [occupied=false, location=Point [x=1, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Cell [occupied=false, location=Point [x=2, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Cell [occupied=false, location=Point [x=2, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Cell [occupied=false, location=Point [x=1, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Cell [occupied=false, location=Point [x=0, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Cell [occupied=false, location=Point [x=2, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Cell [occupied=false, location=Point [x=3, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Cell [occupied=false, location=Point [x=3, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Cell [occupied=false, location=Point [x=2, y=3]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Cell [occupied=false, location=Point [x=1, y=3]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Cell [occupied=false, location=Point [x=3, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Cell [occupied=false, location=Point [x=0, y=3]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=3, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Cell [occupied=false, location=Point [x=4, y=0]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Cell [occupied=false, location=Point [x=4, y=2]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Cell [occupied=false, location=Point [x=4, y=1]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=3, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=3]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=4]]
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Cell [occupied=false, location=Point [x=2, y=4]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Cell [occupied=false, location=Point [x=1, y=4]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=3]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Cell [occupied=false, location=Point [x=0, y=4]] is a new cell, markingit and adding to the end of the queue
+It's parent will be the current cell, added to the parent map
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=3, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Checking Cell [occupied=true, type=rock, location=Point [x=4, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=3]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=4, y=0]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=4, y=2]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Checking Cell [occupied=true, type=rock, location=Point [x=4, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=4, y=1]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=2, y=4]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=4]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=1, y=4]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Grabbing the next cell from the queue: Cell [occupied=false, location=Point [x=0, y=4]]
+Checking to see if this is the destination
+Haven't reached the destination, blacklist this cell
+Checking adjacent cells
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+There aren't any more cells, couldn't find the destination
+
+249 steps executed
+22 cells visited
+
+UCS
+Add the starting cell to the queue, mark as added
+While the queue has elements in it, pop, check, search
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=0, y=0]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=0, y=1]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=1, y=0]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=0, y=2]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=2, y=0]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=1, y=3]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=3, y=0]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=2, y=4]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=4]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=4, y=0]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=4, y=1]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Has not been explored, checking to see if it is in the queue
+Brand new cell, adding to queue and marking
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=1, y=4]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=0, y=4]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=4, y=2]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=true, type=rock, location=Point [x=4, y=3]]
+Blacklisted
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=0, y=3]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=0, y=4]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=3, y=1]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=4, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=1, y=1]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=1, y=2]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=0, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Checking Cell [occupied=false, location=Point [x=0, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=0, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=2, y=1]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=1, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=0]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route is cheaper, replacing the old reference
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=2, y=3]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=4]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=4]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=4]]
+Blacklisted
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=3, y=2]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=4, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=2]]
+Has not been explored, checking to see if it is in the queue
+This cell is already in the queue
+Checking to see if this route is cheaper
+This route was not cheaper
+Checking Cell [occupied=true, type=rock, location=Point [x=4, y=3]]
+Blacklisted
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=4, y=2]]
+Blacklisted
+Popping the next destination from the queue: Cell [occupied=false, location=Point [x=2, y=2]]
+Checking if the current cell is the destination.
+The current cell is not the destination,bBlacklisting the current node
+Getting cells adjacent to the current cell
+Checking each adjacent cell to see if it is in the blacklist
+Checking Cell [occupied=false, location=Point [x=1, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=1]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=2]]
+Blacklisted
+Checking Cell [occupied=true, type=rock, location=Point [x=3, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=2, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=1, y=3]]
+Blacklisted
+Checking Cell [occupied=false, location=Point [x=3, y=2]]
+Blacklisted
+No destination found.
+
+485 steps executed
+22 cells visited

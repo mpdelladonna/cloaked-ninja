@@ -1,0 +1,21 @@
+package project0;
+
+import java.util.List;
+
+public interface SearchStrategy 
+{
+	/**
+	 * Constructs a path from start to end
+	 * 
+	 * @param start point indicating the starting position
+	 * @param end point indicating the starting position
+	 * @return A List of Cells representing the path
+	 */
+	public List<Cell> search(Point start, Point end, Land land);
+	
+	/**
+	 * 
+	 * @return A log of the 
+	 */
+	public Logger getLogger();
+}

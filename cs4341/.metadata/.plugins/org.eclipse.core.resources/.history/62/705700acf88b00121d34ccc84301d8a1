@@ -1,0 +1,43 @@
+package project0;
+
+import java.util.List;
+
+
+public class Land {
+
+	public Cell[][] land;
+	
+	public Land(int width, int height)
+	{
+		land = new Cell[height][width];
+	}
+	
+	public void populateLand(Cell[][] newLand)
+	{
+		this.land = newLand;
+	}
+	
+	public List<Cell> DFS(Point start, Point end)
+	{
+		
+		return null;
+	}
+	
+	public List<Cell> BFS(Point start, Point end)
+	{
+		
+		return null;
+	}
+	
+	public List<Cell> getAdjacentCells(Point p)
+	{
+		
+		
+		return null;
+	}
+	
+	public float calculateCost(List<Cell> path)
+	{
+		return 0.0;
+	}
+}

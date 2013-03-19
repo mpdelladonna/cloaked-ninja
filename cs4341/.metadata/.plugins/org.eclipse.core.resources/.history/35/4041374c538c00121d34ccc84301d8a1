@@ -1,0 +1,47 @@
+package project0;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * Constructs a path from start to end using a depthe first search strategy
+ * 
+ * @author Mike Della Donna
+ *
+ */
+public class DepthFirstSearch implements SearchStrategy {
+
+	LinkedList<Cell> stack;
+	ArrayList<Cell> greylist;
+	ArrayList<Cell> blacklist;
+	
+	public DepthFirstSearch()
+	{
+		stack = new LinkedList<Cell>();
+		greylist = new ArrayList<Cell>();
+		blacklist = new ArrayList<Cell>();
+	}
+	
+	@Override
+	public List<Cell> search(Point start, Point end, Land land)
+	{
+		// create a stack
+		// add current cell to the greylist
+		// check to see if you have reached the destination
+		// if you have, return the grey list, that's your path
+		// if you haven't, check to see if you can move to an adjacent cell
+		// yes
+		// put the rest of the valid adjacent cells on the stack
+		// recurse on the new square
+		// no
+		// move current square from the greylist to the blacklist
+		// are there locations on the stack?
+		// yes
+		// recurse on the top of the stack
+		// no
+		// return destination not found
+		return null;
+	}
+
+}

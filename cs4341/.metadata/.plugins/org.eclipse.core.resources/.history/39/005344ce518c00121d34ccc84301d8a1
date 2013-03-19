@@ -1,0 +1,96 @@
+package project0;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Land {
+
+	private Cell[][] land;
+	private int width;
+	private int height;
+	
+	public Land(int width, int height)
+	{
+		land = new Cell[width][height];
+		this.width = width;
+		this.height = height;
+	}
+	
+	public void populateLand(Cell[][] newLand)
+	{
+		this.land = newLand;
+	}
+	
+	/**
+	 * Constructs a path from start to end using a depth first search
+	 * 
+	 * @param start point indicating the starting position
+	 * @param end point indicating the starting position
+	 * @return A List of Cells representing the path
+	 */
+	public List<Cell> DFSpath(Point start, Point end)
+	{
+		// create a stack
+		// add current cell to the greylist
+		// check to see if you have reached the destination
+		// if you have, return the grey list, that's your path
+		// if you haven't, check to see if you can move to an adjacent cell
+		// yes
+		// put the rest of the valid adjacent cells on the stack
+		// recurse on the new square
+		// no
+		// move current square from the greylist to the blacklist
+		// are there locations on the stack?
+		// yes
+		// recurse on the top of the stack
+		// no
+		// return destination not found
+		
+		return null;
+	}
+	
+	/**
+	 * Constructs a path from start to end using a breadth first search
+	 * 
+	 * @param start point indicating the starting position
+	 * @param end point indicating the starting position
+	 * @return A List of Cells representing the path
+	 */
+	public List<Cell> BFSpath(Point start, Point end)
+	{
+		
+		return null;
+	}
+	
+	
+	/**
+	 * Returns a List of all the viable cells adjacent to the given point
+	 * 
+	 * @param p the point in question
+	 * @return a list of all the adjacent cells
+	 */
+	public List<Cell> getAdjacentCells(Point p)
+	{
+		List<Cell> temp = new ArrayList<Cell>();
+		
+		for(Point pp : p.getCardinalPoints())
+		{
+			if(pp.x >= 0 && pp.y >= 0 && pp.x < width && pp.y < height)
+				temp.add(land[pp.x][pp.y]);
+		}
+		
+		return temp;
+	}
+	
+	/**
+	 * calculates the cost of a given path
+	 * 
+	 * @param path a List of Cell that represents the path
+	 * @return a double representing the cost of the path
+	 */
+	public double calculateCost(List<Cell> path)
+	{
+		return 0.0;
+	}
+}

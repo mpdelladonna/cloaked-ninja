@@ -1,0 +1,100 @@
+package project0;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * Constructs a path from start to end using a depth first search strategy
+ * 
+ * @author Mike Della Donna
+ *
+ */
+public class BreadthFirstSearch implements SearchStrategy {
+
+	LinkedList<Cell> stack;
+	ArrayList<Cell> greylist;
+	ArrayList<Cell> blacklist;
+	HashMap<Cell,Cell> parentMap;
+	
+	public BreadthFirstSearch()
+	{
+		stack = new LinkedList<Cell>();
+		greylist = new ArrayList<Cell>();
+		blacklist = new ArrayList<Cell>();
+		parentMap = new HashMap<Cell, Cell>();
+	}
+	
+	@Override
+	public List<Cell> search(Point start, Point end, Land land)
+	{
+		// add current cell to the greylist
+		greylist.add(land.getCell(start));
+		
+		// check to see if you have reached the destination
+		if(start.equals(end))
+		{
+			// if you have, use the parent map to get back to the original start
+			LinkedList<Cell> path = new LinkedList<Cell>();
+			Cell current = land.getCell(start);
+			path.addFirst(current);
+			current = parentMap.get(current);
+			while(current != null)
+			{
+				path.addFirst(current);
+				current = parentMap.get(current);
+			}
+			
+			return path;
+		}
+		
+		// if you haven't, check to see if you can move to an adjacent cell
+		
+		boolean locationAvailable = false;
+		List<Cell> temp = land.getAdjacentCells(start);
+		for(Cell c : temp)
+		{
+			//if c is unoccupied and has not been explored yet (not on the greylist or blacklist)
+			if(!c.occupied && !greylist.contains(c) && !blacklist.contains(c))
+			{
+				// a location is available
+				locationAvailable = true;
+				// explore this location later
+				stack.add(c);
+				// mark this location as being in progress
+				greylist.add(c);
+				// add start as its parent
+				parentMap.put(c, land.getCell(start));
+			}
+		}
+		
+		// can you move to an adjacent cell?
+		if(locationAvailable)
+		{
+			// the new valid locations are at the top of the stack
+			// recursive call on the top of the stack
+			return search(stack.remove().getLocation(), end, land);
+		}
+		else
+		{
+			// move current square from the greylist to the blacklist
+			greylist.remove(land.getCell(start));
+			blacklist.add(land.getCell(start));
+			
+			// are there locations on the stack?
+			if(stack.size() > 0)
+			{
+				// recursive call on the top of the stack
+				return search(stack.remove().getLocation(), end, land);
+			}
+			else
+			{
+				// return destination not found
+				return null;
+			}
+			
+		}
+	}
+
+}

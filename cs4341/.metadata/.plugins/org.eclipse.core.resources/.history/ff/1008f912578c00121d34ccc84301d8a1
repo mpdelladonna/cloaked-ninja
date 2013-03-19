@@ -1,0 +1,84 @@
+package project0;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Land {
+
+	private Cell[][] land;
+	private int width;
+	private int height;
+	
+	public Land(int width, int height)
+	{
+		land = new Cell[width][height];
+		this.width = width;
+		this.height = height;
+	}
+	
+	public void populateLand(Cell[][] newLand)
+	{
+		this.land = newLand;
+	}
+	
+	/**
+	 * Constructs a path from start to end using specified strategy
+	 * 
+	 * @param start point indicating the starting position
+	 * @param end point indicating the starting position
+	 * @return A List of Cells representing the path
+	 */
+	public List<Cell> search(Point start, Point end, SearchStrategy strategy)
+	{
+		return strategy.search(start, end, this);
+	}
+	
+	/**
+	 * Returns the cell at that point
+	 * @param p
+	 * @return null if location is invalid, otherwise return Cell at that point
+	 */
+	public Cell getCell(Point p)
+	{
+		if(p.x >= 0 && p.y >= 0 && p.x < width && p.y < height)
+		{
+			return land[p.x][p.y];
+		}
+		else
+		{
+			return null;
+		}
+	}
+	
+	
+	/**
+	 * Returns a List of all the viable cells adjacent to the given point
+	 * 
+	 * @param p the point in question
+	 * @return a list of all the adjacent cells
+	 */
+	public List<Cell> getAdjacentCells(Point p)
+	{
+		List<Cell> temp = new ArrayList<Cell>();
+		
+		for(Point pp : p.getCardinalPoints())
+		{
+			if(pp.x >= 0 && pp.y >= 0 && pp.x < width && pp.y < height)
+				temp.add(land[pp.x][pp.y]);
+		}
+		
+		return temp;
+	}
+	
+	/**
+	 * calculates the cost of a given path
+	 * 
+	 * @param path a List of Cell that represents the path
+	 * @return a double representing the cost of the path
+	 */
+	public double calculateCost(List<Cell> path)
+	{
+		return 0.0;
+	}
+}

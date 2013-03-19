@@ -1,0 +1,11 @@
+package project1;
+
+public class Land {
+
+	public Cell[][] land;
+	
+	public Land(int width, int height)
+	{
+		land = new Cell[height][width];
+	}
+}

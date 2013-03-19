@@ -1,0 +1,33 @@
+package project0;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Logger {
+
+	List<String> log;
+	
+	public Logger()
+	{
+		log = new ArrayList<String>();
+	}
+	
+	/**
+	 * Adds a message to the log
+	 * @param msg - the msg to add to the log
+	 */
+	public void log(String msg)
+	{
+		log.add(msg);
+	}
+	
+	/**
+	 * returns the log
+	 * 
+	 * @return the log
+	 */
+	public List<String> getLog()
+	{
+		return log;
+	}
+}
