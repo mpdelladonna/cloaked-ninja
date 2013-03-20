@@ -1,0 +1,40 @@
+package predicate;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptException;
+
+public class Javascript implements Predicate {
+
+	private String javascript;
+	private ScriptEngine engine;
+	
+	public Javascript(String javascript, ScriptEngine engine)
+	{
+		this.engine = engine;
+		this.javascript = javascript;
+	}
+	
+	@Override
+	public boolean result() {
+		try {
+			return (Boolean) engine.eval(javascript);
+		} catch (ScriptException e) {
+			e.getMessage();
+			System.exit(13);
+			return false;
+			
+		} catch (ClassCastException e) {
+			System.err.println();
+        	System.err.println("There was a problem with the evaluated predicate, a boolean was not returned");
+        	System.err.println(e.getMessage());
+        	System.exit(13);
+        	return false;
+		}
+	}
+
+	@Override
+	public int granularity() {
+		return 1;
+	}
+
+}

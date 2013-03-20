@@ -24,4 +24,14 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="search.BreadthFirstSearch"/>
 <fullyQualifiedTypeName name="search.UniformCostSearch"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="rule.predicate.Predicate"/>
+<fullyQualifiedTypeName name="ri.rule.predicate.Javascript"/>
+<fullyQualifiedTypeName name="javax.script.ScriptEngine"/>
+<fullyQualifiedTypeName name="ri.rule.predicate.And"/>
+<fullyQualifiedTypeName name="ri.rule.predicate.Or"/>
+<fullyQualifiedTypeName name="ri.rule.predicate.Not"/>
+<fullyQualifiedTypeName name="ri.RuleParseException"/>
+<fullyQualifiedTypeName name="ri.RuleInterpreter"/>
+<fullyQualifiedTypeName name="ri.rule.predicate.Predicate"/>
 </qualifiedTypeNameHistroy>

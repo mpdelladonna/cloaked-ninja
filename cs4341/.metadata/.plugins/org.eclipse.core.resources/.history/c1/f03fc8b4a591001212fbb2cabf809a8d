@@ -1,0 +1,5 @@
+package ri;
+
+public class RuleParseException extends Exception {
+
+}

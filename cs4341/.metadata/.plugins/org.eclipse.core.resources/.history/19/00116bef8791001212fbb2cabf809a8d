@@ -1,0 +1,24 @@
+package predicate;
+
+/**
+ * This class represnts the application of the unary NOT operator to it's argument
+ * 
+ * @author Mike Della Donna	
+ *
+ */
+public class Not implements Predicate {
+
+	private Predicate pred;
+	
+	@Override
+	public boolean result() {
+		return !pred.result();
+	}
+
+	@Override
+	public int granularity() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

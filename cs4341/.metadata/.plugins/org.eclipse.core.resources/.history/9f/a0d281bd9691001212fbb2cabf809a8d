@@ -1,0 +1,13 @@
+package rule;
+
+import rule.predicate.Predicate;
+
+public class Rule 
+{
+	private Predicate p;
+	
+	public Rule(Predicate p)
+	{
+		
+	}
+}

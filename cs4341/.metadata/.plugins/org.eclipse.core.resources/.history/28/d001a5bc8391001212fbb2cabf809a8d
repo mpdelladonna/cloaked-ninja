@@ -1,0 +1,20 @@
+package predicate;
+
+/**
+ * represents predicates that are composed of two other predicates
+ * 
+ * @author Mike Della Donna
+ *
+ */
+public abstract class BooleanOperator implements Predicate {
+
+	private Predicate LHS; //left hand side predicate
+	private Predicate RHS; //right hand side predicate
+	
+	@Override
+	public int granularity() {
+		
+		return LHS.granularity() + RHS.granularity();
+	}
+
+}

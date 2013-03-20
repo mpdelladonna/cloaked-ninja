@@ -1,0 +1,14 @@
+package ri;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class RuleInterpreterTest {
+
+	@Test
+	public void testCreatePredicate() {
+		fail("Not yet implemented");
+	}
+
+}

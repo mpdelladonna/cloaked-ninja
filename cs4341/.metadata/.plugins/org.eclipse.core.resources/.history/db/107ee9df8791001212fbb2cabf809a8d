@@ -1,0 +1,17 @@
+package predicate;
+
+public class Not implements Predicate {
+
+	@Override
+	public boolean result() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int granularity() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

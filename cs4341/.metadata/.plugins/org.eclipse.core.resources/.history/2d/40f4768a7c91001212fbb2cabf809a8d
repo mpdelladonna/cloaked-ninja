@@ -1,0 +1,26 @@
+package predicate;
+
+import javax.script.ScriptEngine;
+
+public class Javascript implements Predicate {
+
+	private String javascript;
+	private ScriptEngine engine;
+	
+	public Javascript(String javascript, ScriptEngine engine)
+	{
+		this.engine = engine;
+		this.javascript = javascript;
+	}
+	
+	@Override
+	public boolean result() {
+		return engine.eval(javascript);
+	}
+
+	@Override
+	public int granularity() {
+		return 1;
+	}
+
+}

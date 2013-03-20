@@ -1,4 +1,5 @@
-var wm = new Object();
+var wm;
+wm = new Object();
 
 wm.print = function()
 {
@@ -6,7 +7,7 @@ wm.print = function()
 	print(JSON.stringify(this));
 };
 
-wn.ripe = false;
+wm.ripe = false;
 wm.shape = "round";
 wm.carry = true;
 wm.weight = 2;

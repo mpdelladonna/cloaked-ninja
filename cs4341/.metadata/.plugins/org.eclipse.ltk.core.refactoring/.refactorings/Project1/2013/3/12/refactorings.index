@@ -2,3 +2,8 @@
 1363708503689	Move file
 1363708567953	Delete element
 1363717422898	Delete element
+1363808439228	Delete element
+1363808451508	Rename package 'predicate'
+1363813685514	Move compilation unit
+1363813722124	Rename package 'rule'
+1363813734087	Rename package 'rule.predicate'

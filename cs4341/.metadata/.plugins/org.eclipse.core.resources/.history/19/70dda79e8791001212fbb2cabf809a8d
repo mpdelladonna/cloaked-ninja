@@ -1,0 +1,11 @@
+package predicate;
+
+public class Or extends BooleanOperator {
+
+	@Override
+	public boolean result() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

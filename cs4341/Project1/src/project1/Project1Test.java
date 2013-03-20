@@ -66,6 +66,7 @@ public class Project1Test {
     	    }
     	    read.close();
     	    wm = new String(builder);
+    	    System.out.println(wm);
     	    
     	    
     	}
@@ -82,10 +83,23 @@ public class Project1Test {
         
         try{
 	        // evaluate JavaScript code from String
-	        engine.eval(wm);
+	       engine.eval(wm);
 	        
 	        engine.eval("wm.print();");
-        	
+	        
+	        engine.eval("function test(a){" +
+	        		"return a;" +
+	        		"}");
+	        
+	        System.out.print("printing result");
+	        try{
+	        	System.out.println(false == (Boolean) engine.eval("test(1)"));
+	        }
+	        catch(ClassCastException e)
+	        {
+	        	System.out.println("There was a problem with the evaluated function");
+	        	System.out.println(e.getMessage());
+	        }
 	        //evaluate all the lines
 	        for(String js : importedScript)
 	        {

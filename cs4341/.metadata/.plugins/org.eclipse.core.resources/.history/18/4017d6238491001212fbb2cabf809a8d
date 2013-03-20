@@ -1,0 +1,14 @@
+package predicate;
+
+public class And extends BooleanOperator {
+
+	public And(Predicate LHS, Predicate RHS) {
+		super(LHS, RHS);
+	}
+
+	@Override
+	public boolean result() {
+		return false;
+	}
+
+}
