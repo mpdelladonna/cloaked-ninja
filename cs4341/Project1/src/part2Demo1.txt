@@ -1,0 +1,518 @@
+
+{"water":false}
+{"water":true,"hasRiver":true,"hasLake":false,"gear":["rope","waterproofBag","defensiveWeapon","poncho"],"hasVehicle":false,"ecology":"forest","hasMudpit":false,"danger":true,"climate":"moderate","rainy":true,"landscape":"low","foodFactor":5}Beginning rule evaluation
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(50); AND hasWater(); ) AND (NOT hasVehicle();) ) THEN setEcology('forest');
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF ( hasRiver(); OR hasLake(); ) THEN thereIsWater();
+This rule requires information not yet available
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('forest'); AND (NOT hasMudpit();) ) THEN setClimate('moderate');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( ( ecologyIs('desert'); OR ecologyIs('forest'); ) OR ( ecologyIs('tundra'); AND climateIs('continental'); ) ) THEN thereAreDangerousAnimals();
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+This rule requires information not yet available
+Evaluating rule :IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+This rule requires information not yet available
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+This rule requires information not yet available
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+This rule requires information not yet available
+Evaluating rule :IF ( landscapeIs('high'); OR hasRiver(); ) THEN addGear('rope');
+Rule has been triggered
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+This rule requires information not yet available
+Most specific rule is: IF ( landscapeIs('high'); OR hasRiver(); ) THEN addGear('rope');
+Executing action: addGear('rope');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(50); AND hasWater(); ) AND (NOT hasVehicle();) ) THEN setEcology('forest');
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+This rule requires information not yet available
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF ( hasRiver(); OR hasLake(); ) THEN thereIsWater();
+Rule has been triggered
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('forest'); AND (NOT hasMudpit();) ) THEN setClimate('moderate');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( ( ecologyIs('desert'); OR ecologyIs('forest'); ) OR ( ecologyIs('tundra'); AND climateIs('continental'); ) ) THEN thereAreDangerousAnimals();
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+This rule requires information not yet available
+Evaluating rule :IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+This rule requires information not yet available
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+This rule requires information not yet available
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+This rule requires information not yet available
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF ( hasRiver(); OR hasLake(); ) THEN thereIsWater();
+Executing action: thereIsWater();
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(50); AND hasWater(); ) AND (NOT hasVehicle();) ) THEN setEcology('forest');
+Rule has been triggered
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('forest'); AND (NOT hasMudpit();) ) THEN setClimate('moderate');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( ( ecologyIs('desert'); OR ecologyIs('forest'); ) OR ( ecologyIs('tundra'); AND climateIs('continental'); ) ) THEN thereAreDangerousAnimals();
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+This rule requires information not yet available
+Evaluating rule :IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+This rule requires information not yet available
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+This rule requires information not yet available
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+This rule requires information not yet available
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF ( ( treePercentageGreaterThan(50); AND hasWater(); ) AND (NOT hasVehicle();) ) THEN setEcology('forest');
+Executing action: setEcology('forest');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+This rule requires information not yet available
+Evaluating rule :IF ( ecologyIs('forest'); AND (NOT hasMudpit();) ) THEN setClimate('moderate');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( ( ecologyIs('desert'); OR ecologyIs('forest'); ) OR ( ecologyIs('tundra'); AND climateIs('continental'); ) ) THEN thereAreDangerousAnimals();
+Rule has been triggered
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+This rule requires information not yet available
+Evaluating rule :IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+This rule requires information not yet available
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+This rule requires information not yet available
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+This rule requires information not yet available
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF ( ( ecologyIs('desert'); OR ecologyIs('forest'); ) OR ( ecologyIs('tundra'); AND climateIs('continental'); ) ) THEN thereAreDangerousAnimals();
+Executing action: thereAreDangerousAnimals();
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('forest'); AND (NOT hasMudpit();) ) THEN setClimate('moderate');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Rule has been triggered
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+This rule requires information not yet available
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+This rule requires information not yet available
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF ( ecologyIs('forest'); AND (NOT hasMudpit();) ) THEN setClimate('moderate');
+Executing action: setClimate('moderate');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Rule has been triggered
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Rule has been triggered
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Rule has been triggered
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+This rule requires information not yet available
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+This rule requires information not yet available
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF ( climateIs('tropical'); OR climateIs('moderate'); ) THEN expectRain();
+Executing action: expectRain();
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Rule has been triggered
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Rule has been triggered
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+Rule has been triggered
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+Rule has been triggered
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF ( ( rainIsExpected(); OR hasRiver(); ) OR ( landscapeIs('low'); AND climateIs('tropical')); ) ) THEN addGear('waterproofBag');
+Executing action: addGear('waterproofBag');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF maximumHeightLessThan(5); THEN setLandscape('low');
+Rule has been triggered
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Rule has been triggered
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Rule has been triggered
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+Rule has been triggered
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF maximumHeightLessThan(5); THEN setLandscape('low');
+Executing action: setLandscape('low');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Rule has been triggered
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Rule has been triggered
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+Rule has been triggered
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF climateIs('moderate'); THEN setForagableFoodLevelTo(5);
+Executing action: setForagableFoodLevelTo(5);
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Rule has been triggered
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+Rule has been triggered
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF dangerousAnimalsArePresent(); THEN addGear('defensiveWeapon');
+Executing action: addGear('defensiveWeapon');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF rainIsExpected(); THEN addGear('poncho');
+Rule has been triggered
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+Most specific rule is: IF rainIsExpected(); THEN addGear('poncho');
+Executing action: addGear('poncho');
+Removing triggered rule
+re evaluating all remaining rules
+Creating a list of triggered rules
+Evaluating rule :IF ( ( treePercentageGreaterThan(40); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('tundra');
+Evaluating rule :IF ( treePercentageLessThan(40); AND (NOT hasVehicle();) ) THEN setEcology('plains');
+Evaluating rule :IF ( ( treePercentageLessThan(15); AND (NOT hasWater();) ) AND (NOT hasVehicle();) ) THEN setEcology('desert');
+Evaluating rule :IF ( numberOfBuildingsGreaterThan(2); AND hasVehicle(); ) THEN setEcology('urban');
+Evaluating rule :IF maximumHeightGreaterThan(10); THEN setLandscape('high');
+Evaluating rule :IF ( ( maximumHeightDifferenceIsLessThan(2); AND maximumHeightGreaterThan(4); ) AND maximumHeightLessThan(11); ) THEN setLandscape('mid');
+Evaluating rule :IF ( ecologyIs('forest'); AND hasMudpit(); ) THEN setClimate('tropical');
+Evaluating rule :IF ( ecologyIs('desert'); OR ecologyIs('plains'); ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND (NOT hasWater(;) ) THEN setClimate('dry');
+Evaluating rule :IF ( ecologyIs('urban'); AND ( hasWater(); OR treePercentageGreaterThan(30; ) ) THEN climsetClimateateIs('moderate');
+Evaluating rule :IF ecologyIs('tundra'); THEN setClimate('continental');
+Evaluating rule :IF ( ecologyIs('plains'); AND (NOT hasWater();) ) THEN setClimate('polar');
+Evaluating rule :IF ( ecologyIs('tundra'); AND rockPercentageGreaterThan(20); ) THEN setClimate('polar');
+Evaluating rule :IF ( dangerousAnimalsArePresent(); AND ( ecologyIs('desert'); OR ( ecologyIs('forest'); AND climateIs('jungle'); ) ) ) THEN thereArePoisonousAnimals();
+Evaluating rule :IF ( climateIs('dry'); OR climateIs('polar'); ) THEN setForagableFoodLevelTo(1);
+Evaluating rule :IF climateIs('continental'); THEN setForagableFoodLevelTo(3);
+Evaluating rule :IF climateIs('tropical'); THEN setForagableFoodLevelTo(7);
+Evaluating rule :IF thoseAnimalsArePoisonous(); THEN addGear('antiVenom');
+This rule requires information not yet available
+Evaluating rule :IF foragableFoodIsLessThan(4); THEN addGear('extraFood');
+Evaluating rule :IF ( ( ( climateIs('dry'); OR ( landscapeIs('high'); AND ecologyIs('plains'); ) ) OR climateIs('polar'); ) OR ecologyIs('tundra'); ) THEN addGear('extraWater');
+Evaluating rule :IF landscapeIs('high'); THEN addGear('climbingHarness');
+Evaluating rule :IF ( landscapeIs('high'); AND climateIs('polar'); ) THEN addGear('icepick');addGear('avalancheLocator');
+Evaluating rule :IF ( landscapeIs('mid'); AND climateIs('polar'); ) THEN addGear('trekPoles');
+Evaluating rule :IF ( landscapeIs('low'); AND climateIs('polar'); ) THEN addGear('snowShoes');
+Evaluating rule :IF climateIs('polar'); THEN addGear('heavyJacket');
+Evaluating rule :IF maximumHeightGreaterThan(20); THEN addGear('airTank');
+Evaluating rule :IF hasLake(); THEN addGear('fishingGear');
+There were no triggered rules, halting
+Rule evaluation finished

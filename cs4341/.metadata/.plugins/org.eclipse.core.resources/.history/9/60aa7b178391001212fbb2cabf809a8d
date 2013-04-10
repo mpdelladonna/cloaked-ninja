@@ -1,8 +1,0 @@
-package predicate;
-
-public interface Predicate 
-{
-	public boolean result();
-	
-	public int granularity();
-}

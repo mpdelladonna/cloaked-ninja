@@ -1,5 +1,9 @@
 package ri;
-
+/**
+ * 
+ * @author Mike Della Donna
+ *
+ */
 public class RuleParseException extends Exception {
 
 	/**

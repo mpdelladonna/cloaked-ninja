@@ -14,8 +14,13 @@ public class Or extends BooleanOperator {
 	}
 
 	@Override
-	public boolean result() {
+	public boolean result() throws UnknownValueException {
 		return LHS.result() || RHS.result();
+	}
+	
+	public String toString()
+	{
+		return "( "+LHS+" OR "+RHS+" )";
 	}
 
 }

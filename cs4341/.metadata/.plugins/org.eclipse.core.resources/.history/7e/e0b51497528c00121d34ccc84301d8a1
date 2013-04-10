@@ -1,8 +1,0 @@
-package project0;
-
-import java.util.List;
-
-public interface SearchStrategy {
-
-	public List<Cell> search(Point start, Point end, Land land);
-}

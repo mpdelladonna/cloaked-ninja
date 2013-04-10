@@ -1,0 +1,22 @@
+package project2;
+
+public class Project2DemoP2 
+{
+
+	public static void main(String[] args) 
+	{
+		CCVParkingLot lot = new CCVParkingLot(4);
+		
+		//lot.setSeed(2345);
+		lot.initializeRandomLot();
+		
+		int[] newLot = {2,0,3,1};
+		//lot.setLot(newLot);
+		try {
+			lot.solve(100);
+		} catch (NoPathFoundException e) {
+			System.out.println("solution not found");
+		}
+		lot.printLot();
+	}
+}

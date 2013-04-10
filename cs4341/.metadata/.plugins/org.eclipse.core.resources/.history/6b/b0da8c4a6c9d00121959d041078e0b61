@@ -1,0 +1,70 @@
+package project2;
+
+import static java.lang.Math.*;
+
+public class ParkingLot 
+{
+	private int[][] spaces; 
+	public ParkingLot previous;
+	public int previousLots;
+	
+	public ParkingLot(int[][] initialSpots, ParkingLot previous, int numPrev)
+	{
+		this.previous = previous;
+		this.spaces = initialSpots;
+		this.previousLots = numPrev;
+	}
+	
+	public int costToGoal()
+	{
+		int cost = 0;
+		
+		for(int i = 0; i < spaces.length; i++ )
+		{
+			for(int j = 0; j < spaces.length; j++ )
+			{
+				cost += abs(i - getCostX(spaces[i][j])) + abs(j - getCostY(spaces[i][j]));
+			}
+		}
+		
+		return cost;
+	}
+
+	private int getCostX(int i) {
+		switch(i)
+		{
+		case 1:
+		case 2:
+		case 3:
+			return 0;
+		case 4:
+		case 5:
+		case 6:
+			return 1;
+		case 7:
+		case 8:
+		case 0:
+			return 2;
+		}
+		throw new IllegalArgumentException();
+	}
+
+	private int getCostY(int i) {
+		switch(i)
+		{
+		case 1:
+		case 4:
+		case 7:
+			return 0;
+		case 2:
+		case 5:
+		case 8:
+			return 1;
+		case 3:
+		case 6:
+		case 0:
+			return 2;
+		}
+		throw new IllegalArgumentException();
+	}
+}

@@ -16,6 +16,11 @@ public class Javascript implements Predicate {
 	//The javascript interpreter
 	private ScriptEngine engine;
 	
+	/**
+	 * 
+	 * @param javascript valid javascript payload
+	 * @param engine - the script engine to be used to evaluate the payload
+	 */
 	public Javascript(String javascript, ScriptEngine engine)
 	{
 		this.engine = engine;
@@ -23,7 +28,7 @@ public class Javascript implements Predicate {
 	}
 	
 	@Override
-	public boolean result() {
+	public boolean result() throws UnknownValueException {
 		//first try to evaluate the given expression normally
 		try {
 			return (Boolean) engine.eval(javascript);
@@ -31,7 +36,7 @@ public class Javascript implements Predicate {
 			//in this case, the given javascript contained an error
 			//and could not be evaluated
 			System.err.println();
-        	System.err.println("There was a problem with the evaluated predicate, the javascript was malformed");
+        	System.err.println("There was a problem with the evaluated predicate, the javascript was malformed: "+javascript);
         	System.err.println(e.getMessage());
 			System.exit(13);
 			return false;
@@ -40,10 +45,13 @@ public class Javascript implements Predicate {
 			//in this case, the javascript did not evaluate to
 			//a boolean
 			System.err.println();
-        	System.err.println("There was a problem with the evaluated predicate, a boolean was not returned");
+        	System.err.println("There was a problem with the evaluated predicate, a boolean was not returned: "+javascript);
         	System.err.println(e.getMessage());
         	System.exit(13);
         	return false;
+		} catch (NullPointerException e)
+		{
+			throw new UnknownValueException("That value is unknown at this time");
 		}
 	}
 
@@ -51,6 +59,11 @@ public class Javascript implements Predicate {
 	public int granularity() {
 		//a single function always as a granularity of 1
 		return 1;
+	}
+	
+	public String toString()
+	{
+		return javascript;
 	}
 
 }

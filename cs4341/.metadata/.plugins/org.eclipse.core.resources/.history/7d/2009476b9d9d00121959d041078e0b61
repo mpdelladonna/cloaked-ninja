@@ -1,0 +1,19 @@
+
+package project2;
+
+/**
+ * 
+ * @author Mike Della Donna
+ *
+ */
+public class Project2DemoP1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package project2;
+
+public class Project2DemoP2 
+{
+
+	public static void main(String[] args) 
+	{
+		CCVParkingLot lot = new CCVParkingLot(8);
+		
+		lot.setSeed(2873452345);
+		
+		lot.printLot();
+	}
+}

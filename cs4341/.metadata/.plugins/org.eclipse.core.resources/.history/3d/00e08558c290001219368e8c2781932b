@@ -1,5 +1,0 @@
-var wm = new Object();
-
-wm.print = new functino(){
-	print(JSON.stringify(wm));
-}

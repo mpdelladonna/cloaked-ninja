@@ -1,0 +1,48 @@
+
+package project2;
+
+import java.util.PriorityQueue;
+
+/**
+ * 
+ * @author Mike Della Donna
+ *
+ */
+public class Project2DemoP1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+
+	}
+	
+	public ParkingLot astar(ParkingLot initialLot) throws NoPathFoundException
+	{
+		PriorityQueue<ParkingLot> pq = new PriorityQueue<ParkingLot>();
+		
+		ParkingLot currentLot;
+		pq.add(initialLot);
+		
+		while(pq.size() > 0)
+		{
+			currentLot = pq.remove();
+			
+			if(currentLot.costToGoal() == 0)
+			{
+				return currentLot;
+			}
+			else
+			{
+				for(ParkingLot p : currentLot.createNextLots())
+				{
+					pq.add(p);
+				}
+			}
+		}
+		
+		throw new NoPathFoundException();
+	}
+
+}

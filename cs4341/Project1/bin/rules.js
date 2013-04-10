@@ -1,1 +1,0 @@
-if(wm.banana){wm.color="yellow"};

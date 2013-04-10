@@ -16,13 +16,18 @@ public class Not implements Predicate {
 	}
 	
 	@Override
-	public boolean result() {
+	public boolean result() throws UnknownValueException {
 		return !pred.result();
 	}
 
 	@Override
 	public int granularity() {
 		return pred.granularity();
+	}
+	
+	public String toString()
+	{
+		return "(NOT "+pred+")";
 	}
 
 }

@@ -1,0 +1,30 @@
+package project2;
+
+public class ParkingLot 
+{
+	private int[][] spaces; 
+	public ParkingLot previous;
+	public int previousLots;
+	
+	public ParkingLot(int[][] initialSpots, ParkingLot previous, int numPrev)
+	{
+		this.previous = previous;
+		this.spaces = initialSpots;
+		this.previousLots = numPrev;
+	}
+	
+	public int costToGoal()
+	{
+		int cost = 0;
+		
+		for(int[] i : spaces)
+		{
+			for(int j : i)
+			{
+				
+			}
+		}
+		
+		return cost;
+	}
+}

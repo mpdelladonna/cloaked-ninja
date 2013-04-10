@@ -12,7 +12,7 @@ public interface Predicate
 	 * 
 	 * @return true or false
 	 */
-	public boolean result();
+	public boolean result() throws UnknownValueException;
 	
 	/**
 	 * represents the granularity of this predicate
